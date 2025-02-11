@@ -1,215 +1,545 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+:root {
+    --yellow: #f6d365;
+    --black: #333333;
+    --white: #ffffff;
+}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <header>
-        <nav>
-            <div class = "container" >
-                <div class="nav-wrapper">
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Promo</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
 
-        <div class="discount-title">
-            <div class="container">
-                <div class="discount-title-wrapper">
-                    <div class="discount-title-box">
-                        <h1>Discount 50%</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto veritatis maiores soluta, impedit ipsum atque?</p>
-                        <a href="#" class="discount-btn">order now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+.hamburger {
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
 
-    <section class="popular-menu">
-        <div class="container">
-            <div class="popular-menu-title">
-                <h2>Popular menu</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tenetur nesciunt totam asperiores quas perferendis fugiat.
-                </p>
-            </div>
-            <div class="popular-menu-grid">
-                <div class="popular-menu-items">
-                    <img src="assets/img/package-1.png" alt="">
-                    <h3>Package l</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ut.</p>
-                </div>
-                <div class="popular-menu-items">
-                    <img src="assets/img/package-2.png" alt="">
-                    <h3>Package ll</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ut.</p>
-                </div>
-                <div class="popular-menu-items">
-                    <img src="assets/img/package-3.png" alt="">
-                    <h3>Package lll</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ut.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Header Section */
+header {
+    height: 800px;
+    background: url("../img/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    <section class="chicken">
-        <div class="container">
-            <div class="chicken-wrapper">
-                <div class="chicken-box">
-                    <div class="chicken-img">
-                        <img src="assets/img/package-4.png" alt="">
-                    </div>
-                    <div class="chicken-info">
-                        <h2>Chicken Wings</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet aut temporibus, tenetur mollitia similique?
-                        </p>
-                        <a href="#" class="chicken-btn">Order now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    nav {
+        
+        margin: 0 2rem;
 
-    <section class="stats">
-        <div class="container">
-            <div class="stats-title">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo cupiditate dolor quasi voluptate eum.
-                </p>
-            </div>
+        .nav-wrapper {
+            position: relative;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            <div class="stats-grid">
-                <div class="stats-grid-items">
-                    <h3>2k+</h3>
-                    <p>customer</p>
-                </div>
-                <div class="stats-grid-items">
-                    <h3>500</h3>
-                    <p>store</p>
-                </div>
-                <div class="stats-grid-items">
-                    <h3>50</h3>
-                    <p>chef</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            .logo {
+                
+            }
 
-    <section class="satay">
-        <div class="container">
-            <div class="satay-wrapper">
-                <div class="satay-box">
-                    <div class="satay-info">
-                        <h3>Chicken satay</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quibusdam perspiciatis debitis, quas excepturi nemo.</p>
-                        <a href="#" class="satay-btn">Order now</a>
-                    </div>
-                    <div class="satay-img">
-                        <img src="assets/img/package-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            .menu {
+                display: flex;
+                list-style: none;
 
-    <section class="chef">
-        <div class="container">
-            <div class="chef-wrapper">
-                <div class="chef-info">
-                    <img src="assets/img/chef.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores dolorem repellendus dolorum assumenda neque deserunt magni. Vitae exercitationem aspernatur distinctio placeat nemo natus, tempore magnam est sunt, consequuntur amet.</p>
-                    <h3>Luella Harris</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+                li {
+                    margin-left: 50px;
 
-    <section class="update">
-        <div class="container">
-            <div class="update-wrapper">
-                <div class="update-box">
-                    <h3>Don't miss our update</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis labore est ratione culpa earum! Voluptate modi dolorum repellendus, reprehenderit soluta, voluptatum voluptatem delectus quos blanditiis quaerat exercitationem voluptates ullam corrupti!</p>
-                    <form action=""">
-                    <input type="email" name="email" placeholder="Your email">
-                    <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                    a {
+                        color: var(--white);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 
-    <footer>
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-grid">
-                    <div class="footer-grid-items">
-                        <h4>FoodDelish</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor facilis eum consequuntur quos perspiciatis.
-                        </p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fas fa-phone-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-grid-items">
-                        <h4>About</h4>
-                        <ul>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Brand Guidelines</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-grid-items">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">How to order</a></li>
-                            <li><a href="#">Our Product</a></li>
-                            <li><a href="#">Order status</a></li>
-                            <li><a href="#">Promo</a></li>
-                            <li><a href="#">Payment Method</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-grid-items"> 
-                        <h4>Other</h4>
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    @media screen and (min-width: 768px) {
+        .hamburger {
+            display: none;
+        }
+    }
+     
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
 
-    <script src="assets/js/script.js"></script>
+        nav {
+            .nav-wrapper {
+                flex-direction: column;
+                align-items: start;
+                margin: 3rem 0;
+                height: auto;
+
+                .menu.show {
+                    display: flex;
+                }
+
+                .menu {
+                    flex-direction: column;
+                    display: none;
+
+                    li {
+                        margin-left: 0;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .discount-title {
+        .discount-title-wrapper {
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .discount-title-box  {
+                width: 880px;
+                margin: 10px;
+
+                h1 {
+                    font-size: clamp(2rem, 10vw, 6.875rem);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: clamp(1rem, 10vw, 1.875rem);
+                }
+
+                .discount-btn {
+                    background-color: var(--yellow);
+                    color: var(--black);
+                    max-width: 20rem; /* 320px */
+                    width: 100%;
+                    height: 65px; /* 320px */
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-radius: 0.3rem;
+                    margin-top: 3.75rem; /* 65px */
+                }
+            }
+        }
+    }
+}
+
+/* Popular Menu Section */
+
+.popular-menu {
+    background: url("../img/popular-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: var(--black);
+    overflow: hidden;
+
+    .popular-menu-title {
+        margin: 3rem 0;
+        text-align: center;
+
+        h2 {
+            font-size: clamp(2rem, 10vw, 3.75rem);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: clamp(1rem, 10vw, 1.625rem);
+        }
+    }
+
+    .popular-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+
+        .popular-menu-items {
+            text-align: center;
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: clamp(1rem, 10vw, 2rem);
+                margin: 1rem 0;
+            }
+            
+            p {
+                font-size: clamp(1rem, 10vw, 1.25rem);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
+    }
+}
+
+/* Chicken Wing Section */
+
+.chicken {
+    background: url(../img/chicken-wing-bg-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+    .chicken-wrapper {
+        display: flex;
+        align-items: center;
+        height: 800px;
+
+        .chicken-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .chicken-img {
+
+                img {
+                    width: 100%;
+                }
+            }
+            .chicken-info {
+                max-width: 580px;
+                width: 100%;
+                color: var(--white);
+                padding: 1rem;
+
+                h2 {
+                    font-size: clamp(2rem, 10vw, 3.625rem);
+                    text-transform: uppercase;
+                }
+                
+                p {
+                    font-size: clamp(2rem, 10vw, 1.5rem);
+                    margin-top: 2rem;
+                }
+
+                .chicken-btn {
+                    background-color: var(--yellow);
+                    color: var(--black);
+                    max-width: 20rem; /* 320px */
+                    width: 100%;
+                    height: 65px; /* 320px */
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-radius: 0.3rem;
+                    margin-top: 3.75rem; /* 65px */
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+
+        .chicken-wrapper {
+            height: auto;
+
+            .chicken-box {
+                padding: 3rem 0;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/* Stats Section */
+.stats {
+    background: url(../img/stats-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--black);
+    height: 800px;
+    overflow: hidden;
+
+    .stats-title {
+        text-align: center;
+        margin-top: 4rem;
+
+        h2 {
+            font-size: clamp(2rem, 10vw, 3.625rem);
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-size: clamp(2rem, 10vw, 1.5rem);
+            margin-top: 2rem;
+        }
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 5rem;
+        text-align: center;
+        margin-top: 4rem;
+
+        .stats-grid-items {
+            border: 10px solid var(--black);
+            padding: 8rem 0;
+            margin-top: 3rem;
+
+            h3 {
+                font-size: clamp(2rem, 10vw, 4rem);
+                text-transform: uppercase;
+            }
+            
+            p {
+                font-size: clamp(2rem, 10vw, 2rem);
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
+    }
+}
+
+/* Satay Section */
+
+.satay {
+    background: url(../img/chicken-satay-bg-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: var(--white);
+
+    .stay-wrapper {
+        display: flex;
+        align-items: center;
+        height: 800px;
+    }
+
+    .satay-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .satay-info {
+            max-width: 580px;
+            width: 100%;
+            padding: 1rem;
+
+            h3 {
+                font-size: clamp(2rem, 10vw, 3.625rem);
+                text-transform: uppercase;
+            }
+            
+            p {
+                font-size: clamp(2rem, 10vw, 1.5rem);
+                margin-top: 2rem;
+            }
+            .satay-btn {
+                background-color: var(--yellow);
+                    color: var(--black);
+                    max-width: 20rem; /* 320px */
+                    width: 100%;
+                    height: 65px; /* 320px */
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-radius: 0.3rem;
+                    margin-top: 3.75rem; /* 65px */
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
+
+        .satay-wrapper {
+            height: auto;
+
+            .satay-box {
+                flex-direction: column;
+                padding: 3rem;
+            }
+        }
+    }
+}
+
+/* Chef Section */
+
+.chef {
+    height: 800px;
+    background: url(../img/chef-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .chef-wrapper {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 800px;
+        text-align: center;
+
+        .chef-info {
+
+            img {
+                max-width: 248px;
+                width: 100%;
+            }
+
+            p {
+                font-size: clamp(1rem, 10vw, 2.3rem);
+                margin-top: 2rem;
+            }
+            
+
+            h3 {
+                font-size: clamp(1rem, 10vw, 2.8rem);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/* Update Section */
+
+.update {
+    height: 800px;
+    background: url(../img/update-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .update-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        color: var(--black);
+
+        .update-box {
+            text-align: center;
+
+            h3 {
+                font-size: clamp(1rem, 10vw, 3.75rem);
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: clamp(1rem, 10vw, 2.3rem);
+                margin: 3rem 0;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+
+                input {
+                    max-width: 550px;
+                    width: 100%;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+                    max-width: 220px;
+                    width: 100%;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: var(--black);
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* Footer Section */
+
+footer {
+    height: 800px;
+    background-color: var(--black);
+
+    .footer-wrapper {
+        height: 800px;
+        display: flex;
+        align-items: center;
+
+        .footer-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            color: var(--white);
+
+            .footer-grid-items {
+                margin: 1rem;
+
+                h4 {
+                    font-size: clamp(1rem, 5vw, 2rem);
+                    margin-bottom: 1rem;
+                    font-weight: 300;
+                }
+
+                a {
+                    color: var(--white);
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        margin-top: 1rem;
+                    
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &:nth-child(1) {
+                    ul {
+                        display: flex;
     
-</body>
-</html># test-webFood
+                        li {
+                            margin-top: 1rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
+
+        .footer-wrapper {
+            height: auto;
+        }
+    }
+}
